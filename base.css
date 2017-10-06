@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Copse');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: serif;
+}
+
+html,body{
+    /*background-color: #d4d4d4;--*/
+    background: linear-gradient(to top, rgb(90, 68, 59), rgb(246, 160, 76));
+}
+h1{
+    font-family: Copse, Verdana, Tahoma, sans-serif;
+    font-size: 3.998rem;
+    color: white;
+    padding:1rem 2rem;
+    text-align: center;
+    animation-name: titleCol;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+nav ul{
+    padding:0.5rem 0;
+}
+nav li{
+    font-size: 1.999rem;
+    list-style-type: none;
+}
+nav li>a{
+  font-family: 'Candara', Verdana, serif;
+    display: block;
+    text-decoration: none;
+    padding: 0.05rem 1rem;
+    color: rgb(189, 162, 132);
+    box-shadow: 0px 0px 0px #772d2d, 0px 0px 0px #684242;
+    background-image: linear-gradient(to right, white, rgba(255,255,255,0));
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    font-size: 1.999rem;
+    transition: box-shadow 0.5s, background-size 0.8s, padding 1s, font-size 1s;
+}
+
+nav li:not(:last-child)>a{
+    border-bottom: 0.1rem solid;
+    border-image: linear-gradient(to right, currentColor, rgba(0,0,0,0));
+    border-image-slice: 1;
+}
+
+nav li>a:hover,
+nav li>a:active{
+    background-size: 100% 100%;
+    color: rgb(255, 166, 66);
+    padding: 0.8rem 1.2rem;
+    box-shadow: -2px 2px 3px #772d2d, -2px 3px 3px #684242;
+    border-bottom-width: 0;
+    font-size: 2.3rem;
+    transition: background-size 0.5s, color 0.5s, padding 0.5s, box-shadow 0.5s, border-bottom-width 0.5s, font-size 0.5s;
+}
+
+nav p{
+  font-family: Impact, 'Avant Garde', serif;
+  font-size: 1.414rem;
+  padding:0.5rem 2rem;
+  border-bottom: 0.1rem solid;
+  border-image: linear-gradient(to bottom right, rgba(0,0,0,255), rgba(0,0,0,0));
+  border-image-slice: 1;
+
+}
+
+main p:last-child{
+    padding-bottom: 4rem;
+}
+.wrapper{
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: linear-gradient(to top,  white, white, rgb(255, 225, 158));
+    border-left: 0.2rem solid;
+    border-right: 0.2rem solid;
+    border-color: #773809;
+    box-shadow: 0px 0px 10px black;
+}
+header{
+    width:100%;
+    border-bottom: 1rem solid #773809;
+    background-image: url("images/header.jpg");
+     background-size: cover;
+}
+nav{
+    float:left;
+    width: 38.2%;
+}
+main{
+    float:right;
+    width: 61.8%;
+    color: rgb(83, 37, 0);
+}
+footer{
+    clear:both;
+    width: 100%;
+    border-top: 0.5rem solid black;
+}
+footer p{
+    font-size: 1rem;
+    padding: 2rem;
+    color: #666;
+}
+
+@keyframes titleCol {
+  0%  {color: white; text-shadow: -1px 0 #ff7135, 0 1px #ff7135, 1px 0 #ff7135, 0 -1px #ff7135;}
+  50% {color: rgb(255, 214, 96); text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;}
+  100% {color: white; text-shadow: -1px 0 #ff7135, 0 1px #ff7135, 1px 0 #ff7135, 0 -1px #ff7135;}
+
+}
